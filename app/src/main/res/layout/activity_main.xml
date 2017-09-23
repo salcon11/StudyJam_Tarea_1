@@ -22,37 +22,49 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/btn_music"
-            android:layout_marginLeft="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/btn_mus"
-            android:textColor="#ffffff"
-            android:text="@string/musica"
-            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
 
-        <Button
-            android:id="@+id/btn_buscar"
-            android:layout_marginLeft="190dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/btn_mus"
-            android:textColor="#ffffff"
-            android:text="@string/buscar"
-            />
+            <TextView
+                android:id="@+id/txt_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="@string/musica"
+                android:layout_alignBaseline="@+id/btn_..."
+                android:layout_marginLeft="15dp"
+                />
 
-        <Button
-            android:id="@+id/btn_..."
-            android:layout_width="20dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/btn_mus"
-            android:textColor="#ffffff"
-            android:text="..." />
+            <Button
+                android:id="@+id/btn_buscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_mus"
+                android:textColor="#ffffff"
+                android:text="@string/buscar"
+                android:layout_toLeftOf="@+id/btn_..."
+                />
+
+            <Button
+                android:id="@+id/btn_..."
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_mus"
+                android:textColor="#ffffff"
+                android:text="..."
+                android:layout_marginRight="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/second"
+        android:gravity="fill_horizontal"
         android:layout_below="@+id/first"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -163,12 +175,15 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="340dp"
+        <RelativeLayout
+            android:id="@+id/eight"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/uno"
+                android:layout_alignParentTop="true"
                 android:layout_marginTop="7dp"
                 android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
@@ -204,9 +219,9 @@
 
                     <View
                         android:layout_marginTop="15dp"
-                        android:layout_width="match_parent"
+                        android:layout_width="250dp"
                         android:layout_height="1dp"
-                        android:layout_gravity="center"
+                        android:layout_gravity="left"
                         android:background="#716d6d">
                     </View>
                 </LinearLayout>
@@ -214,6 +229,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/dos"
+                android:layout_below="@+id/uno"
                 android:layout_marginTop="7dp"
                 android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
@@ -249,9 +266,9 @@
 
                     <View
                         android:layout_marginTop="15dp"
-                        android:layout_width="match_parent"
+                        android:layout_width="250dp"
                         android:layout_height="1dp"
-                        android:layout_gravity="center"
+                        android:layout_gravity="left"
                         android:background="#716d6d">
                     </View>
                 </LinearLayout>
@@ -259,6 +276,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/tres"
+                android:layout_below="@+id/dos"
                 android:layout_marginTop="7dp"
                 android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
@@ -293,29 +312,29 @@
                         android:textSize="15sp" />
                     <View
                         android:layout_marginTop="15dp"
-                        android:layout_width="match_parent"
+                        android:layout_width="250dp"
                         android:layout_height="1dp"
-                        android:layout_gravity="center"
+                        android:layout_gravity="left"
                         android:background="#716d6d">
                     </View>
                 </LinearLayout>
-
             </LinearLayout>
 
-        </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/button"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_redbor"
+                    android:text="#  A   .   G  H   .   N  Ñ   .   T  U   .   X   Y"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="20dp"
-            android:layout_height="wrap_content"
-            >
-            <Button
-                android:layout_width="20dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/btn_redbor"
-                android:textColor="#ffffff"
-                android:text="#  A   .   G  H   .   N  Ñ   .   T  U   .   X   Y"
-                android:gravity="center"/>
-        </LinearLayout>
+        </RelativeLayout>
 
     </LinearLayout>
 
