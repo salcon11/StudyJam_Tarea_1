@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TareaN1</string>
+    <string name="musica">Musica</string>
+    <string name="buscar">BUSCAR</string>
+    <string name="lista">Lista de Reproduccion</string>
+    <string name="pistas">Pistas</string>
+    <string name="albun">álbumes</string>
+    <string name="ult">Ultimas pistas anadidas</string>
+    <string name="ale">   Aleatorio 49 pistas   </string>
+</resources>
